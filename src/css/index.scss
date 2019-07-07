@@ -1,0 +1,127 @@
+
+// newly create by 2018-03-29
+@import 'var.scss';
+@import 'mixin.scss';
+
+ul,ol,dl,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $link-color;
+    img{
+        width: 100%;
+    }
+}
+
+.scroll-body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: px2rem(88);
+    padding-bottom: px2rem(100);
+    overflow: hidden;
+    font-size: px2rem(24);
+    background-color: $f5;
+    .al-app{
+        max-width: px2rem(750);
+        margin: 0 auto;
+    }
+}
+
+.al-nav{
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: px2rem(100);
+    padding: 0 px2rem(10) 0 px2rem(10);
+    border-top: $def-border;
+    border-bottom: $def-border;
+    background-color: $gf;
+}
+
+.al-nav__wrap{
+    height: 100%;
+    .al-nav__item{
+        flex: 1;
+        text-align: center;
+        font-size: px2rem(20);
+        a{
+            display: block;
+            padding-top: px2rem(15);
+            line-height: px2rem(98);
+            border-radius: px2rem(10);
+            &:active{
+                background: $e1;
+            }
+        }
+        .al-icon,
+        .al-nav__text{
+            display: block;
+            line-height: 1;
+        }
+        .al-icon{
+            font-size: px2rem(44);
+        }
+        .al-nav__text{
+            padding: px2rem(10) 0;
+        }
+        &.active{
+            a{
+                color: $default-blue;
+            }
+        }
+    }
+    .al-app{
+        padding: 0 px2rem(10);
+    }
+}
+
+.al-header{
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: px2rem(88);
+    padding: 0 px2rem(10);
+    background-color: $gf;
+    border-bottom: $def-border;
+    .al-search__wrap{
+        flex: 1;
+        padding-right: px2rem(30);
+        a{
+            display: block;
+            font-size: px2rem(26);
+            color: $search-color;
+        }
+    }
+    .al-address{
+        padding: 0 px2rem(32) 0 px2rem(30);
+        font-size: px2rem(30);
+        line-height: px2rem(87);
+    }
+    .al-icon__bottom-arr{
+        margin-left: px2rem(10);        
+        font-size: px2rem(30);
+    }
+    .al-icon__search{
+        left: px2rem(18);
+        font-size: px2rem(26);
+    }
+    .al-input__fake{
+        display: block;
+        height: px2rem(62);
+        margin: px2rem(13) 0 px2rem(12) 0;
+        text-indent: px2rem(56);
+        line-height: px2rem(56);
+        border: $def-border;
+        border-radius: px2rem(6);
+        background-color: $ge;
+    }
+}
+
+@import './views/home.scss';

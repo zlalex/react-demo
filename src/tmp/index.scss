@@ -1,0 +1,87 @@
+@function px2rem ($px){
+    @return $px / 62.2 * 1rem;
+}
+
+.al-layout__header{
+    height: px2rem(87);
+    border-bottom: 1px solid #c5e8fa;
+    background: linear-gradient(#1899f5, #94dfff);
+    .name{
+        right: px2rem(20);
+        width: px2rem(125);
+        height: px2rem(40);
+        color: #fff;
+        font-size: px2rem(24);
+        text-align: center;
+        line-height: px2rem(40);
+        border-radius: px2rem(40);
+        background: rgba(#1899f5, .5);
+    }
+    .address{
+        padding-top: px2rem(24);
+        margin-left: px2rem(20);
+        color: #fff;
+        .temperature{
+            font-size: px2rem(44);
+            line-height: 1;
+        }
+        p{
+            text-indent: px2rem(12);
+            font-size: px2rem(18);
+            line-height: 1;
+            &:last-child{
+                margin-top: px2rem(5);
+            }
+        }
+    }
+}
+
+.al-layout__content{
+    background-color: #f1f1f1;
+    .al-content__head{
+        padding: px2rem(21) 0;
+        font-size: px2rem(20);
+        text-align: center;
+        color: #6d6d6d; 
+        line-height: 1;
+    }
+    .active{
+        color: #1899f5;
+    }
+    .al-layout__section{
+        background-color: #fff;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+}
+
+.al-layout__section{
+    padding: px2rem(20);
+    margin-bottom: px2rem(12);
+    font-size: px2rem(20);
+    color: #9b9b9b;
+    line-height: px2rem(36);
+    .right{
+        margin-left: px2rem(90);
+    }
+    .time{
+        span{
+            color: #f3970e;
+            font-size: px2rem(24);
+        }
+    }
+    .machine-name{
+        color: #545454;
+    }
+    .tips{
+        margin: px2rem(5);
+        width: px2rem(56);
+        height: px2rem(26);
+        color: #6aa0d2;
+        font-size: px2rem(14);
+        line-height: px2rem(26);
+        text-align: center;
+        background-color: #ecf6ff;
+        border-radius: 4px;
+    }
+}

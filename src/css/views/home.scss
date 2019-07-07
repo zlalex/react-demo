@@ -1,0 +1,59 @@
+@import '../var.scss';
+
+$item-red: #e76264;
+$item-yellow: #f2ad3f;
+$item-green: #2db8a8;
+$item-purple: #5c4f98;
+
+$item-arr: (1, $item-red) (2, $item-yellow) (3,$item-green) (4,$default-blue) (5,$item-purple);
+
+.al-banner{
+    height: px2rem(300);
+}
+
+.al-nav__second{
+    height: px2rem(180);
+    background-color: $gf;
+    border-bottom: $def-border;
+    .al-second__navitem{
+        flex: 1;
+        height: 100%;
+        a{   
+            display: block;     
+            padding-top: px2rem(34);
+        }
+    }
+    .al-second__item{
+        width: px2rem(80); 
+        height: px2rem(80);
+        margin: 0 auto ;
+        text-align: center;
+        line-height: px2rem(80);
+        border-radius: 50%;
+        .al-icon {
+            font-size: px2rem(50);
+            color: $gf;
+        }
+    }
+    .al-second__item-text{
+        padding: px2rem(12) 0 px2rem(20) 0;
+    }
+}
+
+@each $item in $item-arr {
+    $index: nth($item, 1);
+    $color: nth($item, 2);
+    .al-second__navitem:nth-child(#{$index}){
+        .al-second__item{
+            background-color: $color;
+        }
+    }
+}
+
+.al-home__section{
+    margin: px2rem(20) px2rem(10) 0 px2rem(10);
+    border-radius: 4px;
+    border: $def-border;
+    background-color: $gf;
+    box-shadow: 0 4px 4px 0 $e7;
+}

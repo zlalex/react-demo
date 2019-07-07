@@ -1,0 +1,19 @@
+$g3: #333;
+$g6: #666;
+$g9: #999;
+$gc: #ccc;
+$ge: #eee;
+$gf: #fff;
+$e1: #e1e1e1;
+$e7: #e7e7e7;
+$f5: #f5f5f5;
+
+$link-color: #333a49;
+$search-color: #90949b;
+$default-color: $g3;
+$default-blue: #27a6e0;
+
+
+@function px2rem ($px){
+    @return $px / 75 * 1rem
+}
