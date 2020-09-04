@@ -95,7 +95,7 @@
   "devDependencies": {
     "axios": "^0.18.0",
     "fastclick": "^1.0.6",
-    "node-sass": "^4.8.3",
+    "node-sass": "^4.13.1",
     "react-router-dom": "^4.2.2",
     "sass-loader": "^6.0.7"
   }
