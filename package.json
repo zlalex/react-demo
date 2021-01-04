@@ -93,7 +93,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "fastclick": "^1.0.6",
     "node-sass": "^4.8.3",
     "react-router-dom": "^4.2.2",
